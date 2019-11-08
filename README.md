@@ -3,6 +3,9 @@
 Inspried by talks from Öredev 2019
 Based on demo project from Google https://github.com/GoogleCloudPlatform/microservices-demo
 
+## Targets
+### 1. CI pipeline
+
 ## Screenshots
 
 ## System Architecture
