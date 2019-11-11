@@ -1,4 +1,12 @@
+debug: true
+
 logging:
     level:
         org:
-            springframework: debug   
+            springframework: debug
+# disable cache of template enginer
+spring:
+    thymeleaf:
+        cache: false
+    messages:
+        cache-seconds: -1
