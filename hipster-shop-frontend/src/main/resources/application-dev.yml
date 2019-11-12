@@ -6,7 +6,15 @@ logging:
             springframework: debug
 # disable cache of template enginer
 spring:
+    jpa:
+        # Show db string
+        show-sql: true
+        properties:
+            hibernate:
+                # To beautify or pretty print the SQL
+                format_sql: true
     thymeleaf:
         cache: false
     messages:
         cache-seconds: -1
+
