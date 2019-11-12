@@ -1,9 +1,9 @@
 # debug: true
 
-logging:
-    level:
-        org:
-            springframework: debug
+#logging:
+#    level:
+#        org:
+#            springframework: debug
 # disable cache of template enginer
 spring:
     jpa:
@@ -13,8 +13,13 @@ spring:
             hibernate:
                 # To beautify or pretty print the SQL
                 format_sql: true
+        hibernate:
+            # create table schema on startup
+            ddl-auto: create-drop
     thymeleaf:
+        # disable cache on the thymeleaf template engine
         cache: false
     messages:
+        # disable cache on the messages
         cache-seconds: -1
 

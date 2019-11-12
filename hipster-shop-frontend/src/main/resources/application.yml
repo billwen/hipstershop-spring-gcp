@@ -1,0 +1,5 @@
+spring:
+  jpa:
+    hibernate:
+      # disable create the table schema
+      ddl-auto: none
