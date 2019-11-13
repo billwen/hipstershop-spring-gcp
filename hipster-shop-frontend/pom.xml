@@ -13,7 +13,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hipster-shop-frontend</name>
 	<description>A demo project using Spring Boot on GCP </description>
-	<packaging>war</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
