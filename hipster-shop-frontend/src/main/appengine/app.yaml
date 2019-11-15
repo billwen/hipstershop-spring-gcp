@@ -12,11 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START gae_java11_helloworld_yaml]
+# Java 11 Second generation app engine
 runtime: java11
-instance_class: F1
+
+# Cost
+instance_class: F4
+
+# auto scaling settings
+automatic_scaling:
+  max_instances: 1
+  min_instances: 0
+  target_cpu_utilization: 0.95
+  max_concurrent_requests: 80
 
 # Explicitly set the memory limit and maximum heap size for the Spring Boot app
 env_variables:
-  JAVA_TOOL_OPTIONS: "-XX:MaxRAM=256m -XX:ActiveProcessorCount=2 -Xmx32m"
-# [END gae_java11_helloworld_yaml]
+  JAVA_TOOL_OPTIONS: "-XX:MaxRAM=1024m -XX:ActiveProcessorCount=2 -Xmx32m"

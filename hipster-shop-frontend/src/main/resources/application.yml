@@ -1,3 +1,10 @@
+# debug: true
+
+logging:
+    level:
+        org:
+            springframework: debug
+
 spring:
   jpa:
     hibernate:
